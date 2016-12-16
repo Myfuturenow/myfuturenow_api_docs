@@ -1,8 +1,8 @@
 ---
-path: '/login'
+rest_uri: '/login'
 title: 'Authenticate'
 
-layout: nil
+layout: null
 ---
 
 This method allows users to retrieve stuff.
