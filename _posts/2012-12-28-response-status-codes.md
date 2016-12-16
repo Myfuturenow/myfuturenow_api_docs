@@ -16,7 +16,7 @@ Successes differ from errors in that their body may not be a simple response obj
 Error responses are simply returning [standard HTTP error codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) along with some additional information:
 
 * The error code is sent back as a status header
-* The body includes an object describing both the code and message (for debugging and/or display purposes)
+* The body includes a message object (for debugging and/or display purposes)
 
 For a call with an invalid authentication token, for example:
 

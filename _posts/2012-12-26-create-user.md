@@ -1,7 +1,7 @@
 ---
 category: User
 rest_uri: '/api/v1/users'
-title: 'Create a User (v1)'
+title: 'Create a User'
 type: 'POST'
 
 layout: null
@@ -11,10 +11,18 @@ This method allows users to create a new user.
 
 ### Request
 
-* The headers must include a **valid authentication token**.
+* The headers must include a **Valid Authentication Token** and an **Accept** header
 * The mandatory user fields are `email`, `first_name` and `last_name`
 
-```Authentication: Token TOKEN```
+Request headers:
+
+```
+Authentication: Token TOKEN
+Accept: application/vnd.myfuturenow.v1+json
+Content-Type: application/json
+```
+
+Request body:
 
 ``` json
 {
@@ -31,7 +39,9 @@ This method allows users to create a new user.
   "current_address_locality": "Larchington",
   "current_address_county": "Larchshire",
   "current_address_postcode": "LA1 1AA",
-  "current_address_udprn": "12345678"
+  "current_address_udprn": "12345678",
+  "pension_employer_name": "Royal Mail",
+  "pension_start_year": 1993
 }
 ```
 
@@ -45,7 +55,7 @@ This method allows users to create a new user.
 {
   "id": 1001,
   "email": "john@example.com",
-  "inserted_at": "2016-12-16T12:35:42.965729",
+  "inserted_at": "2016-12-16T12:35:42.965729"
   ...
 }
 ```
