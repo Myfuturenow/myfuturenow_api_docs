@@ -645,6 +645,25 @@ code {
   white-space: pre;
 }
 
+.nav-logo {
+  background: url("/images/logo_text_white.png");
+  background-image: url("/images/logo_text_white.svg"), none;
+
+  background-size: 200px 31px;
+  float: left;
+  height: 31px;
+  margin-top: .3333rem;
+  width: 200px;
+  margin-bottom: 0.5rem;
+}
+
+.nav-logo img {
+  filter: alpha(opacity = 0);
+  height: 31px;
+  opacity: 0;
+  width: 200px;
+}
+
 /* https://github.com/richleland/pygments-css/blob/master/pastie.css */
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #60a0b0; font-style: italic } /* Comment */

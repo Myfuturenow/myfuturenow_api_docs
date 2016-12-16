@@ -12,7 +12,7 @@ This method allows users to create a new user.
 ### Request
 
 * The headers must include a **valid authentication token**.
-* **The body can't be empty** and must include at least the email attribute, a `string` that will be used as the email-address of the user.
+* The mandatory user fields are `email`, `first_name` and `last_name`
 
 ```Authentication: Token TOKEN```
 
@@ -44,7 +44,8 @@ This method allows users to create a new user.
 ``` json
 {
   "id": 1001,
-  "email": "john@example.com"
+  "email": "john@example.com",
+  "inserted_at": "2016-12-16T12:35:42.965729",
   ...
 }
 ```
