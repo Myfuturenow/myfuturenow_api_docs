@@ -1,6 +1,6 @@
 ---
 exclude: ['README.markdown']
 permalink: ':title'
-highlighter: true
+highlighter: rouge
 safe: false
 title: 'MyFutureNow'

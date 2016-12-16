@@ -11,7 +11,7 @@ This method allows users to retrieve stuff.
 
 Sends back a collection of things.
 
-```Authentication: bearer TOKEN```
+```authorization: Token TOKEN```
 ```{
     id: thing_2,
     name: 'My second thing'

@@ -18,12 +18,12 @@ Error responses are simply returning [standard HTTP error codes](http://www.w3.o
 * The error code is sent back as a status header
 * The body includes a message object (for debugging and/or display purposes)
 
-For a call with an invalid authentication token, for example:
+For a call with an invalid authorization token, for example:
 
 ```Status: 401 Access denied```
 
 ``` json
 {
-  "message": "Access denied: Invalid authentication token"
+  "message": "Access denied: Invalid authorization token"
 }
 ```

@@ -1,6 +1,6 @@
 ---
 category: User
-rest_uri: '/api/v1/users'
+rest_uri: '/api/users'
 title: 'Create a User'
 type: 'POST'
 
@@ -11,13 +11,13 @@ This method allows users to create a new user.
 
 ### Request
 
-* The headers must include a **Valid Authentication Token** and an **Accept** header
+* The headers must include a **Valid Authorization Token** and an **Accept** header
 * The mandatory user fields are `email`, `first_name` and `last_name`
 
 Request headers:
 
 ```
-Authentication: Token TOKEN
+Authorization: Token [API_TOKEN]
 Accept: application/vnd.myfuturenow.v1+json
 Content-Type: application/json
 ```

@@ -12,7 +12,7 @@ This method allows the user to post a new thing to his stuff.
 ### Request
 
 * **`:id`** is the id the thing to delete.
-* The headers must include a **valid authentication token**.
+* The headers must include a **valid authorization token**.
 * **The body is omitted**.
 
 ### Response
