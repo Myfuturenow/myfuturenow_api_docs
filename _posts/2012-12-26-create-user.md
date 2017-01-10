@@ -1,13 +1,34 @@
 ---
 category: User
 rest_uri: '/api/users'
-title: 'Create a User'
+title: 'Create a User (Customer)'
 type: 'POST'
 
 layout: null
 ---
 
-This method allows users to create a new user.
+This method creates a new user (customer registration)
+
+### Attributes
+
+| Attribute name              | Description                          | Mandatory? |
+|:----------------------------|:-------------------------------------|-----------:|
+| email                       | Customer email address               | Y          |
+| _password_                  | _For testing purposes_               | N          |
+| first_name                  | Forename(s)                          | Y          |
+| last_name                   | Last name(s) _(aka Surname)_         | Y          |
+| gender                      | `male`, `female`, `trans` or `other` | N          |
+| maiden_name                 | Previous name(s)                     | N          |
+| date_of_birth               | e.g. `1991-04-23`                    | Y          |
+| phone_number                | Customer _mobile_ phone number       | Y          |
+| national_insurance_number   | Full National Insurance number       | Y          |
+| _current_address:_ street   | Building number & street             | Y          |
+| _current_address:_ locality | Town or city                         | Y          |
+| _current_address:_ county   | County or region                     | N          |
+| _current_address:_ postcode | Full postal code                     | Y          |
+| _current_address:_ udprn    | [Unique Delivery Point Reference Number](https://ideal-postcodes.co.uk/documentation/udprn) | N |
+| _pension:_ employer_name    | Workplace pension employer name      | Y          |
+| _pension:_ start_year       | Pension start year (e.g. `1983`)     | Y          |
 
 ### Request
 

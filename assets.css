@@ -664,6 +664,24 @@ code {
   width: 200px;
 }
 
+#content article table {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+#content article table th,
+#content article table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#content article table thead {
+  background-color: #ddd;
+}
+
+#content article table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
 /* https://github.com/richleland/pygments-css/blob/master/pastie.css */
 .highlight .hll { background-color: #ffffcc }
 .highlight .c { color: #60a0b0; font-style: italic } /* Comment */
