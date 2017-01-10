@@ -24,7 +24,7 @@ Content-Type: application/json
 
 Request body:
 
-``` json
+```json
 {
   "email": "john7@example.com",
   "password": "23423432",
@@ -35,14 +35,54 @@ Request body:
   "date_of_birth": "1991-04-23",
   "phone_number": "0777 123 4566",
   "national_insurance_number": "AB 12 34 56 A",
-  "current_address_street": "1 The Larch",
-  "current_address_locality": "Larchington",
-  "current_address_county": "Larchshire",
-  "current_address_postcode": "LA1 1AA",
-  "current_address_udprn": "12345678",
-  "pension_employer_name": "Royal Mail",
-  "pension_start_year": 1993
+  "current_address": {
+    "street": "1 The Larch",
+    "locality": "Larchington",
+    "county": "Larchshire",
+    "postcode": "LA1 1AA",
+    "udprn": "12345678"
+  },
+  "pensions": [
+    {
+      "employer_name": "Royal Mail",
+      "start_year": 1993
+    }
+  ]
 }
+```
+
+Example _curl_ command:
+
+```sh
+curl -X POST \
+  -H "Authorization: Token [$API_TOKEN]" \
+  -H "Accept: application/vnd.myfuturenow.v1+json" \
+  -H "Content-Type: application/json" \
+  -d '{
+    "email": "john20@example.com",
+    "password": "23423432",
+    "first_name": "Jonny",
+    "last_name": "Smith",
+    "gender": "male",
+    "maiden_name": "Jones",
+    "date_of_birth": "1991-04-23",
+    "phone_number": "0777 123 4566",
+    "national_insurance_number": "AB 12 34 56 A",
+    "current_address": {
+      "street": "1 The Larch",
+      "locality": "Larchington",
+      "county": "Larchshire",
+      "postcode": "LA1 1AA",
+      "udprn": "12345678"
+    },
+    "pensions": [
+      {
+        "employer_name": "Royal Mail",
+        "start_year": 1983
+      }
+    ]
+  }' \
+  "https://[$API_HOST]/api/users"
 ```
 
 ### Response
