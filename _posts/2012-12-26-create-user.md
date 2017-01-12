@@ -31,6 +31,7 @@ This method creates a new user (customer registration)
 | _pension:_ start_year       | Pension start year (e.g. `1983`)     | Y          |
 | _pension:_ current_value    | Pension current value (£)            | Y          |
 | _pension:_ annual_fees_percent | Pension annual fees (%)           | Y          |
+| _pension:_ policy_number    | Scheme, Plan or Policy number        | Y          |
 
 
 ### Request
@@ -71,7 +72,8 @@ Request body:
       "employer_name": "Royal Mail",
       "start_year": 1993,
       "current_value": 20000,
-      "annual_fees_percent": 0.75
+      "annual_fees_percent": 0.75,
+      "policy_number": "ABC/12345"
     }
   ]
 }
@@ -106,7 +108,8 @@ curl -X POST \
         "employer_name": "Royal Mail",
         "start_year": 1983,
         "current_value": 20000,
-        "annual_fees_percent": 0.75
+        "annual_fees_percent": 0.75,
+        "policy_number": "ABC/12345"
       }
     ]
   }' \
