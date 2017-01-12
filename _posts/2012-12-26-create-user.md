@@ -29,6 +29,9 @@ This method creates a new user (customer registration)
 | _current_address:_ udprn    | [Unique Delivery Point Reference Number](https://ideal-postcodes.co.uk/documentation/udprn) | N |
 | _pension:_ employer_name    | Workplace pension employer name      | Y          |
 | _pension:_ start_year       | Pension start year (e.g. `1983`)     | Y          |
+| _pension:_ current_value    | Pension current value (£)            | Y          |
+| _pension:_ annual_fees_percent | Pension annual fees (%)           | Y          |
+
 
 ### Request
 
@@ -66,7 +69,9 @@ Request body:
   "pensions": [
     {
       "employer_name": "Royal Mail",
-      "start_year": 1993
+      "start_year": 1993,
+      "current_value": 20000,
+      "annual_fees_percent": 0.75
     }
   ]
 }
@@ -99,7 +104,9 @@ curl -X POST \
     "pensions": [
       {
         "employer_name": "Royal Mail",
-        "start_year": 1983
+        "start_year": 1983,
+        "current_value": 20000,
+        "annual_fees_percent": 0.75
       }
     ]
   }' \
