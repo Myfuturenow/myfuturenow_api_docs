@@ -18,7 +18,7 @@ Error responses are simply returning [standard HTTP error codes](http://www.w3.o
 * The error code is sent back as a status header
 * The body includes a message object (for debugging and/or display purposes)
 
-**Example1:** An API call with an invalid authorization token:
+**Example 1:** An API call with an invalid authorization token:
 
 ```
 Status: 401 Access denied
