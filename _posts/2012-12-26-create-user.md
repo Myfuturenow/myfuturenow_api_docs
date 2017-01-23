@@ -41,7 +41,7 @@ This method creates a new user (customer registration)
 
 Request headers:
 
-```
+```sh
 Authorization: Token [API_TOKEN]
 Accept: application/vnd.myfuturenow.v1+json
 Content-Type: application/json
@@ -83,7 +83,7 @@ Example _curl_ command:
 
 ```sh
 curl -X POST \
-  -H "Authorization: Token [$API_TOKEN]" \
+  -H "Authorization: Token $API_TOKEN" \
   -H "Accept: application/vnd.myfuturenow.v1+json" \
   -H "Content-Type: application/json" \
   -d '{
@@ -113,17 +113,20 @@ curl -X POST \
       }
     ]
   }' \
-  "https://[$API_HOST]/api/users"
+  "https://$API_HOST/api/users"
 ```
 
 ### Response
 
-**If succeeds**, returns the created user.
+**If succeeds**, returns a summary of the created user data, and a `callback_url`
 
-```Status: 201 Created```
+```
+Status: 201 Created
+```
 
 ``` json
 {
+  "callback_url": "https://[API_HOST]/user/activation/new?token=[TOKEN]",
   "id": 1001,
   "email": "john@example.com",
   "inserted_at": "2016-12-16T12:35:42.965729"
@@ -131,4 +134,4 @@ curl -X POST \
 }
 ```
 
-For errors responses, see the [response status codes documentation](#response-status-codes).
+For errors responses, see the [response status codes documentation](#/response-status-codes).

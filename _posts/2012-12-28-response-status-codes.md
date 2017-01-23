@@ -18,12 +18,35 @@ Error responses are simply returning [standard HTTP error codes](http://www.w3.o
 * The error code is sent back as a status header
 * The body includes a message object (for debugging and/or display purposes)
 
-For a call with an invalid authorization token, for example:
+**Example1:** An API call with an invalid authorization token:
 
-```Status: 401 Access denied```
+```
+Status: 401 Access denied
+```
 
 ``` json
 {
   "message": "Access denied: Invalid authorization token"
+}
+```
+
+**Example 2:** An API call with invalid user attributes:
+
+```
+Status: 422 Unprocessable Entity
+```
+
+``` json
+{
+  "errors": [
+    {
+      "field": "email",
+      "message": "must be a valid email address"
+    },
+    {
+      "field": "first_name",
+      "message": "can't be blank"
+    }
+  ]
 }
 ```

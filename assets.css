@@ -624,7 +624,6 @@ code {
   padding: 15px 15px 0;
 }
 
-#content .body code,
 #content .body pre {
   border: 1px solid #e2e7ea;
   background: #eef1f2;
@@ -637,12 +636,6 @@ code {
 
 #content .body pre code {
   border: none;
-}
-
-#content .body p > code {
-  display: block;
-  padding: 15px;
-  white-space: pre;
 }
 
 .nav-logo {
