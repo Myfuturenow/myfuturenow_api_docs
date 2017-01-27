@@ -22,6 +22,7 @@ This method creates a new user (customer registration)
 | date_of_birth               | e.g. `1991-04-23`                    | Y          |
 | phone_number                | Customer _mobile_ phone number       | Y          |
 | national_insurance_number   | Full National Insurance number       | Y          |
+| year_of_retirement          | Retirement year (e.g. `2044`)        | Y          |
 | _current_address:_ street   | Building number & street             | Y          |
 | _current_address:_ locality | Town or city                         | Y          |
 | _current_address:_ county   | County or region                     | N          |
@@ -60,6 +61,7 @@ Request body:
   "date_of_birth": "1991-04-23",
   "phone_number": "0777 123 4566",
   "national_insurance_number": "AB 12 34 56 A",
+  "year_of_retirement": 2044,
   "current_address": {
     "street": "1 The Larch",
     "locality": "Larchington",
@@ -96,6 +98,7 @@ curl -X POST \
     "date_of_birth": "1991-04-23",
     "phone_number": "0777 123 4566",
     "national_insurance_number": "AB 12 34 56 A",
+    "year_of_retirement": 2044,
     "current_address": {
       "street": "1 The Larch",
       "locality": "Larchington",
