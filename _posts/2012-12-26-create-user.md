@@ -129,7 +129,7 @@ Status: 201 Created
 
 ``` json
 {
-  "callback_url": "https://[API_HOST]/user/activation/new?token=[TOKEN]",
+  "callback_url": "https://[API_HOST]/log_in/[TOKEN]",
   "id": 1001,
   "email": "john@example.com",
   "inserted_at": "2016-12-16T12:35:42.965729"
