@@ -3,7 +3,6 @@ category: User
 rest_uri: '/api/users'
 title: 'Create a User (Customer)'
 type: 'POST'
-
 layout: null
 ---
 
@@ -121,7 +120,7 @@ curl -X POST \
 
 ### Response
 
-**If succeeds**, returns a summary of the created user data, and a `callback_url`
+**If succeeds**, returns a summary of the created user data, and a `callback_url` _(valid for 15 minutes)_
 
 ```
 Status: 201 Created

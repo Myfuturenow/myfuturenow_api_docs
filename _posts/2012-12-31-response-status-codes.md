@@ -1,6 +1,5 @@
 ---
 title: 'Response status codes'
-
 layout: null
 ---
 
