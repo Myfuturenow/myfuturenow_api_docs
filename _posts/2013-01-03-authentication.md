@@ -4,7 +4,7 @@ title: Authentication
 layout: null
 ---
 
-You will have received an **API Token** from MyFutureNow technical team. Authenticate your account when using the API by including your API token as a HTTP header when making a request.
+You will have received an **API Token** from the MyFutureNow technical team. Authenticate your account when using the API by including your API token in an `Authorization` header, when making a HTTP request.
 
 ```
 Authorization: Token [API_TOKEN]
