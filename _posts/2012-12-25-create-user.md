@@ -1,7 +1,7 @@
 ---
 category: User
 rest_uri: '/api/users'
-title: 'Create a User (Customer)'
+title: 'Create a user (customer)'
 type: 'POST'
 layout: null
 ---

@@ -1,4 +1,5 @@
 ---
+category: Introduction
 title: 'Response status codes'
 layout: null
 ---
@@ -10,7 +11,7 @@ Successes differ from errors in that their body may not be a simple response obj
 * `GET`, `PUT`, `PATCH`, `DELETE` return `200 OK` on success
 * `POST` returns 201 on success
 
-### Error
+### Errors
 
 Error responses are simply returning [standard HTTP error codes](http://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html) along with some additional information:
 

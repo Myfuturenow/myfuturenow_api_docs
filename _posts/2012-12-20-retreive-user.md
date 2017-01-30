@@ -1,7 +1,7 @@
 ---
 category: User
 rest_uri: '/api/users/:id'
-title: 'Retreive User details'
+title: 'Retreive a user'
 type: 'GET'
 
 layout: null
