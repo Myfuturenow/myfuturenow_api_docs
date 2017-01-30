@@ -37,7 +37,7 @@ This method creates a new user (customer registration)
 ### Request
 
 * The headers must include a **Valid Authorization Token** and an **Accept** header
-* The mandatory user fields are `email`, `first_name` and `last_name`
+* The headers should include a **Content-Type** header
 
 Request headers:
 
