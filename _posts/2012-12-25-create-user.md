@@ -6,7 +6,7 @@ type: 'POST'
 layout: null
 ---
 
-This method creates a new user (customer registration)
+This endpoint creates a new user (customer registration)
 
 ### Attributes
 
@@ -19,7 +19,7 @@ This method creates a new user (customer registration)
 | gender                      | `male`, `female`, `trans` or `other` | N          |
 | maiden_name                 | Previous name(s)                     | N          |
 | date_of_birth               | e.g. `1991-04-23`                    | Y          |
-| phone_number                | Customer _mobile_ phone number       | Y          |
+| phone_number                | Customer phone number                | Y          |
 | national_insurance_number   | Full National Insurance number       | Y          |
 | year_of_retirement          | Retirement year (e.g. `2044`)        | Y          |
 | _current_address:_ street   | Building number & street             | Y          |
@@ -72,7 +72,7 @@ Request body:
     {
       "employer_name": "Royal Mail",
       "start_year": 1993,
-      "current_value": 20000,
+      "current_value": 20000.32,
       "annual_fees_percent": 0.75,
       "policy_number": "ABC/12345"
     }
@@ -109,7 +109,7 @@ curl -X POST \
       {
         "employer_name": "Royal Mail",
         "start_year": 1983,
-        "current_value": 20000,
+        "current_value": 20000.32,
         "annual_fees_percent": 0.75,
         "policy_number": "ABC/12345"
       }

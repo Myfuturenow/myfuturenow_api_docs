@@ -1,15 +1,15 @@
 ---
 category: User
 rest_uri: '/api/users/:id'
-title: 'Retreive a user'
+title: 'Retrieve a user'
 type: 'GET'
 
 layout: null
 ---
 
-This method retrieves details of a previously created user.
+This endpoint retrieves details of a previously created user.
 
-_Note: You only have permission to retrieve details that you have created via your API authorisation key._
+_Note: You only have permission to retrieve details for users that you have created (i.e. via your API token)._
 
 ### Request
 
